@@ -127,7 +127,6 @@ Optrådt i ${character.episode.length} episoder!
         // Indlæs karakterer ved start
         loadCharacters(1);
 
-        // Tilføj enter-taste support til søgning
         document.getElementById('searchInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 searchCharacters();
