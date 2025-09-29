@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Karakter Browser</title>
+    <link rel="stylesheet" href="/assets/css/css.css">
+    <script defer src="/assets/js/js.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛸 Rick and Morty Universe 🛸</h1>
+            <p class="subtitle">Udforsk karaktererne fra den vilde dimension!</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Søg efter karakter...">
+            <button onclick="searchCharacters()">🔍 Søg</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="loadRandomCharacter()">🎲 Tilfældig Karakter</button>
+            <button onclick="loadCharacters(1)">🔄 Genindlæs</button>
+            <button onclick="filterByStatus('alive')">💚 Levende</button>
+            <button onclick="filterByStatus('dead')">💀 Døde</button>
+        </div>
+
+        <div id="content"></div>
+        
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+</body>
+</html>
