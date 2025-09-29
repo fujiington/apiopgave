@@ -1,0 +1,52 @@
+@mixin flex-center($gap: 10px, $wrap: wrap) {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin button-style {
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border: 2px solid $primary;
+  border-radius: $border-radius;
+  cursor: pointer;
+  background: $primary-light;
+  color: $primary;
+  font-weight: bold;
+  transition: $transition;
+  box-shadow: $shadow-sm rgba($primary, 0.2);
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    background: $primary-hover;
+    box-shadow: $shadow-md rgba($primary, 0.4);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+@mixin card-style {
+  background: rgba(15, 20, 40, 0.8);
+  border: 2px solid rgba($primary, 0.3);
+  border-radius: $card-radius;
+  overflow: hidden;
+  box-shadow: $shadow-card rgba($primary, 0.1);
+  transition: $transition;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-lg rgba($primary, 0.3);
+    border-color: rgba($primary, 0.6);
+  }
+}

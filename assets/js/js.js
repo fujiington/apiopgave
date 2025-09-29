@@ -88,7 +88,7 @@
                     document.getElementById('pagination').innerHTML = '';
                 })
                 .catch(error => {
-                    content.innerHTML = `<div class="error">❌ Kunne ikke finde karakter</div>`;
+                    content.innerHTML = `<div class="error">Kunne ikke finde karakter</div>`;
                 });
         }
 

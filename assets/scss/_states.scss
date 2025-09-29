@@ -1,0 +1,24 @@
+.loading {
+  text-align: center;
+  color: $primary;
+  font-size: 1.5em;
+  padding: 40px;
+  text-shadow: $shadow-sm rgba($primary, 0.5);
+}
+
+.error {
+  text-align: center;
+  color: $danger;
+  background: rgba($danger, 0.1);
+  border: 2px solid $danger;
+  padding: 20px;
+  border-radius: $card-radius;
+  font-size: 1.2em;
+  backdrop-filter: blur(10px);
+  box-shadow: $shadow-md rgba($danger, 0.2);
+}
+
+.pagination {
+  @include flex-center(10px, nowrap);
+  margin-top: 30px;
+}
